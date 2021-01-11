@@ -6,14 +6,29 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.card {
+@media screen and (max-width: 600px) {
+  .card {
   margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 30px;
   margin-left:20px;
   margin-right:20px;
   padding:5px;
-  width: 100%;
+  width: 90%;
+  height: 350px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  -webkit-animation: open 2s cubic-bezier(0.39, 0, 0.38, 1);
+}
+  }
+
+.card {
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 30px;
+  padding: 5px 30px;
+  width: 400px;
   height: 350px;
   border-radius: 3px;
   background-color: #fff;
