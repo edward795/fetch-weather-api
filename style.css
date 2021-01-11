@@ -10,7 +10,9 @@ body {
   margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 30px;
-  padding:30px;
+  margin-left:20px;
+  margin-right:20px;
+  padding:5px;
   width: 100%;
   height: 350px;
   border-radius: 3px;
