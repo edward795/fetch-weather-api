@@ -22,8 +22,14 @@ function fetchData(){
         var cel=temp-273.15;
         cel=cel.toFixed(2);
 
+        //conversion of kelvin temperatures to centigrade
+        max_temp=obj.main.temp_min - 273.15
+        max_temp=max_temp.toFixed(2);
+        min_temp=obj.main.temp_max - 273.15
+        min_temp=min_temp.toFixed(2);
+
         //set the html content of div to a 'JSX' expression.Note here backtiks are used not single quotes
-        document.getElementById("location").innerHTML=`<div class="card">
+        document.getElementById("location").innerHTML=`<div class="card" style="padding:50px;">
          <h2>${obj.name}</h2>
          <h3>${obj.weather[0].description}<span>Wind ${obj.wind.speed} km/h <span class="dot">•</span> humidity ${obj.main.humidity}%</span></h3>
          <h2>${cel} &#8451</h2>
@@ -46,8 +52,8 @@ function fetchData(){
              <tr>
                  <td>${obj.main.pressure} hpa</td>
                  <td>${obj.clouds.all}%</td>
-                 <td>${obj.main.temp_min - 273.15} &#8451</td>
-                 <td>${obj.main.temp_max - 273.15} &#8451</td>
+                 <td>${max_temp} &#8451</td>
+                 <td>${min_temp} &#8451</td>
                  
              </tr>
             
