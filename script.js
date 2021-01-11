@@ -29,7 +29,7 @@ function fetchData(){
         min_temp=min_temp.toFixed(2);
 
         //set the html content of div to a 'JSX' expression.Note here backtiks are used not single quotes
-        document.getElementById("location").innerHTML=`<div style="margin:50px;"><div class="card">
+        document.getElementById("location").innerHTML=`<div class="card">
          <h2>${obj.name}</h2>
          <h3>${obj.weather[0].description}<span>Wind ${obj.wind.speed} km/h <span class="dot">•</span> humidity ${obj.main.humidity}%</span></h3>
          <h2>${cel} &#8451</h2>
@@ -59,7 +59,7 @@ function fetchData(){
             
          </table>
      </div>
-     </div>
+     
          `
      })
      //catch the error and set the div html content to another 'JSX' expression
