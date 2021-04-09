@@ -71,3 +71,14 @@ function fetchData(){
  
  }
  
+ 
+ function handle(e){
+	
+    if(e.keyCode === 13){
+		//Hitting Enter Key
+		fetchData();
+    	
+    }
+	return false;
+}
+
